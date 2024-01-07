@@ -4,24 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Movies</title>
   </head>
   <body>
-    <i class="fa fa-car"></i>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/tC-rRhQcnlI?si=IRV6E7aqDmq47H4Q"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <header>
+      <nav class="nav-bar" id="nav">
+        <div class="site-logo">
+          <div class="burger text-white" id="burger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <a class="site-logo-icon" href="#">
+            <i class="fa-solid fa-video"></i>
+            Films
+          </a>
+          <ul class="nav-links">
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-house"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="./movie-details.html">
+                <i class="fa-solid fa-film"></i>
+                Movies
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-tv"></i>
+                TV Series
+              </a>
+            </li>
+            <li class="more" id="options">
+              <a href="#">
+                <i class="fa-solid fa-chevron-down"></i>
+                Options
+              </a>
+              <ul class="sections" id="sections">
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#movies">Latest Movie</a></li>
+                <li><a href="#series">Latest Series</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav-utils text-white">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+              Login
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              Search
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script
+      src="https://kit.fontawesome.com/cd0bc30836.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let nav = document.getElementById("nav");
+      let burger = document.getElementById("burger");
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+      });
+
+      let sections = document.getElementById("sections");
+      let options = document.getElementById("options");
+      let addAppear = () => {
+        sections.classList.toggle("flex");
+      };
+      options.addEventListener("click", addAppear);
+    </script>
   </body>
 </html>
