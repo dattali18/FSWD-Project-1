@@ -44,9 +44,24 @@
                 Options
               </a>
               <ul class="sections" id="sections">
-                <li><a href="#trending">Trending</a></li>
-                <li><a href="#movies">Latest Movie</a></li>
-                <li><a href="#series">Latest Series</a></li>
+                <li>
+                  <a href="#trending">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    Trending
+                  </a>
+                </li>
+                <li>
+                  <a href="#movies">
+                    <i class="fa-solid fa-clock"></i>
+                    Latest Movie
+                  </a>
+                </li>
+                <li>
+                  <a href="#series">
+                    <i class="fa-solid fa-clock"></i>
+                    Latest Series
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -66,24 +81,159 @@
           </li>
         </ul>
       </nav>
+      <section class="head-section text-white">
+        <div class="left-section">
+          <h1 class="head-section-header">
+            Over <span class="text-orange-dark">66,000</span> Movies and TV Show
+            Episodes available and still updating. Enjoy your Free HD Streaming
+            Now!
+          </h1>
+          <form class="search-bar-head">
+            <input
+              type="text"
+              name="search-bar"
+              id="search-bar"
+              placeholder="Enter Keywords ..."
+            />
+            <a href="#" class="search-bar-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </form>
+        </div>
+      </section>
     </header>
+    <main>
+      <section id="trending">
+        <div class="section-head text-white">
+          <h2 class="section-header">Trending</h2>
+          <div class="section-header-spacer"></div>
+          <div class="section-links">
+            <ul>
+              <li class="active">Movies</li>
+              <li>TV Series</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-body">
+          <div class="card">
+            <img
+              src="/static/image/Movies/movie-1.jpeg"
+              alt="image"
+              class="card-image"
+            />
+            <div class="card-text">
+              <h3 class="card-title">Movie Title</h3>
+              <div class="card-info">
+                <p class="card-year">2023</p>
+                <i class="fa-solid fa-circle" style="font-size: 0.2rem"></i>
+                <p class="card-time">134min</p>
+                <i class="fa-solid fa-circle" style="font-size: 0.2rem"></i>
+                <p class="card-rating">5.7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="movies">
+        <div class="section-head text-white">
+          <h2 class="section-header">Latest Movie</h2>
+        </div>
+        <div class="section-body"></div>
+        <div class="section-head text-white">
+          <h2 class="section-header">Latest TV Series</h2>
+        </div>
+        <div class="section-body"></div>
+      </section>
+    </main>
+    <footer class="text-white">
+      <div class="footer-about-us">
+        <h3 class="footer-header">About Us</h3>
+        <div class="footer-lists">
+          <ul class="footer-list">
+            <li><a href="#">Term of service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV</a> Series</li>
+            <li><a href="#">Top IMDb</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-genre">
+        <h3 class="footer-header">Genre</h3>
+        <div class="footer-lists">
+          <ul class="footer-list footer-list-genre">
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-folder"></i>
+                <p>Action</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-folder"></i>
+                <p>Comedy</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-folder"></i>
+                <p>Drama</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-list footer-list-genre">
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-folder"></i>
+                <p>Fantasy</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-folder"></i>
+                <p>Horror</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-folder"></i>
+                <p>Mystery</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-contact-us">
+        <h3 class="footer-header">Contact Us</h3>
+        <ul class="footer-list footer-list-links">
+          <li>
+            <a href="#" class="contact-link">
+              <i class="fa-brands fa-telegram"></i>
+              <p>Join Telegram Channel</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="contact-link">
+              <i class="fa-brands fa-reddit-alien"></i>
+              <p>Join Subreddit</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="contact-link">
+              <i class="fa-brands fa-twitter"></i>
+              <p>Join Group</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script
       src="https://kit.fontawesome.com/cd0bc30836.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      let nav = document.getElementById("nav");
-      let burger = document.getElementById("burger");
-      burger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-      });
-
-      let sections = document.getElementById("sections");
-      let options = document.getElementById("options");
-      let addAppear = () => {
-        sections.classList.toggle("flex");
-      };
-      options.addEventListener("click", addAppear);
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
