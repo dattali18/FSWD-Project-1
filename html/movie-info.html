@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="/static/style/style.css" />
 
-    <title>Movies</title>
+    <title>Movie Details</title>
   </head>
   <body>
     <header>
@@ -81,28 +81,57 @@
           </li>
         </ul>
       </nav>
-      <section class="head-section text-white">
-        <div class="left-section">
-          <h1 class="head-section-header">
-            Over <span class="text-orange-dark">66,000</span> Movies and TV Show
-            Episodes available and still updating. Enjoy your Free HD Streaming
-            Now!
-          </h1>
-          <form class="search-bar-head">
-            <input
-              type="text"
-              name="search-bar"
-              id="search-bar"
-              placeholder="Enter Keywords ..."
-            />
-            <a href="#" class="search-bar-btn">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </form>
+    </header>
+    <main>
+      <section>
+        <div class="section-head">
+          <h2 class="section-header">Movie Trailer</h2>
+        </div>
+        <div class="container">
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/GSycMV-_Csw?si=UtLpo32BfwuwNRaF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
       </section>
-    </header>
-    <main></main>
+      <section class="text-white">
+        <div class="section-head">
+          <h2 class="section-header">Movie Details</h2>
+        </div>
+        <div class="table-section" style="overflow-x: auto;">
+          <table class="movie-details-table">
+            <thead>
+              <tr>
+                <th rowspan="2">Seasons</th>
+                <th rowspan="2">Episodes</th>
+                <th colspan="2">Originally released</th>
+              </tr>
+              <tr>
+                <th>First released</th>
+                <th>Last released</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>8</div></td>
+                <td colspan="2"><div>February 4, 2022</div></td>
+              </tr>
+              <tr>
+                <td><div>2</div></td>
+                <td><div>8</div></td>
+                <td><div>December 15, 2023</div></td>
+                <td><div>January 19, 2024</div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
     <footer class="text-white">
       <div class="footer-about-us">
         <h3 class="footer-header">About Us</h3>

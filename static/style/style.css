@@ -154,11 +154,13 @@ nav.nav-bar {
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
-  max-height: 10rem;
+  min-height: 4rem;
   background-color: #111317;
   position: fixed;
   top: 0;
   left: 0;
+
+  z-index: 1;
 }
 
 .site-logo-icon {
@@ -355,7 +357,6 @@ a.site-logo-icon:hover {
   .site-logo-icon {
     font-size: 2rem;
     font-weight: 400;
-    line-height: 2.2rem;
   }
 
   .open .nav-links {
@@ -731,3 +732,102 @@ a.contact-link {
     justify-content: space-between;
   }
 }
+
+/* Movie details */
+
+/* .container-center {
+  display: grid;
+  place-items: center;
+
+  padding-top: 0;
+} */
+
+.container {
+  overflow: hidden;
+
+  /* width: 70%; */
+  padding: 0 10%;
+
+  /* margin-top: 4rem; */
+  /* padding-top: 2rem; */
+}
+
+#video {
+  position: sticky;
+
+  /* top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%); */
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+}
+
+/* table styles */
+
+.movie-details-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.movie-details-table td > div,
+.movie-details-table th {
+  border-radius: 0.3rem;
+
+  border: 1px solid #313743;
+  padding: 1rem;
+  text-align: center;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: hidden;
+}
+
+.movie-details-table td > div {
+  background-color: #111317;
+
+  font-weight: 300;
+}
+
+.movie-details-table th {
+  background-color: #1f232c;
+}
+
+/* .movie-details-table tbody tr {
+  background-color: #111317;
+} */
+
+/* .movie-details-table tbody tr:nth-child(even) {
+  background-color: #313743;
+  color: #fff;
+} */
+
+/* .movie-details-table tbody tr:hover {
+  background-color: #313743;
+} */
+
+.table-section {
+  padding: 0 10%;
+  padding-bottom: 2rem;
+}
+
+/* @media only screen and (max-width: 610px) and (min-width: 510px) {
+  .table-section {
+    padding: 0 2%;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .movie-details-table {
+    font-size: 0.8rem;
+  }
+
+  .movie-details-table td > div,
+  .movie-details-table th {
+    padding: 0.8rem;
+  }
+} */
