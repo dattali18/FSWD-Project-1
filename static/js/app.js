@@ -15,6 +15,7 @@ options.addEventListener("click", addAppear);
 
 // film
 // Function to create a card element
+
 function createCard(card) {
   const cardElement = document.createElement("div");
   cardElement.classList.add("card");
@@ -80,10 +81,10 @@ function addCardsToSection(sectionId, cards) {
 }
 
 // Fetch data from JSON files and add cards to sections
-fetch("/movies.json")
+fetch("../../json/movies.json")
   .then((response) => response.json())
   .then((movies) => addCardsToSection("movies", movies));
 
-fetch("/tv_series.json")
+fetch("../../json/tv_series.json")
   .then((response) => response.json())
   .then((tvSeries) => addCardsToSection("series", tvSeries));
