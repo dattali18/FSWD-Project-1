@@ -166,8 +166,7 @@ nav.nav-bar {
   align-items: center;
   justify-content: center;
   background-color: #313743;
-  padding: 1rem 0.5rem;
-  min-width: 14.375rem; /* 230px converted to rem */
+  padding: 0.8rem 2rem;
 
   font-size: 2rem;
 }
@@ -175,6 +174,18 @@ nav.nav-bar {
 a.site-logo-icon {
   text-decoration: none;
   color: var(--white);
+}
+
+a.site-logo-icon:hover {
+  color: #f04f24;
+}
+
+.option {
+  color: white;
+}
+
+.option:hover {
+  color: #f14e27;
 }
 
 .site-logo-icon > * {
@@ -274,8 +285,9 @@ a.site-logo-icon {
   .nav-links {
     display: none;
   }
+
   .site-logo-icon p {
-    font-size: 1.95rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 2.2rem;
   }
@@ -290,7 +302,7 @@ a.site-logo-icon {
     background-color: #111317;
 
     position: absolute;
-    top: 59px;
+    top: 4rem;
     left: 0;
 
     margin: 0;
@@ -318,6 +330,8 @@ a.site-logo-icon {
   .sections li {
     margin: 0;
     padding: 0;
+
+    text-align: center;
   }
 }
 
@@ -339,7 +353,7 @@ a.site-logo-icon {
   }
 
   .site-logo-icon {
-    font-size: 1.95rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 2.2rem;
   }
@@ -354,7 +368,7 @@ a.site-logo-icon {
     background-color: #111317;
 
     position: absolute;
-    top: 59px;
+    top: 4rem;
     left: 0;
 
     margin: 0;
@@ -381,6 +395,8 @@ a.site-logo-icon {
   .sections li {
     margin: 0;
     padding: 0;
+
+    text-align: center;
   }
 }
 
@@ -388,9 +404,11 @@ a.site-logo-icon {
 
 .head-section {
   min-width: 100%;
-  min-height: calc(80vh - 6.5rem);
-  margin-top: calc(10rem - 5.5rem);
-  padding: 2.5rem 1rem 1.875rem 1.625rem; /* Adjusted padding values */
+  min-height: calc(60vh - 6.5rem);
+
+  margin-top: 4rem;
+  /* padding: 2.5rem 1rem 1.875rem 1.625rem; Adjusted padding values */
+  padding: 2.5rem 1.5rem;
   background: linear-gradient(
       90deg,
       #313743 10%,
@@ -400,8 +418,8 @@ a.site-logo-icon {
     url("/static/image/Header/maxresdefault.jpg");
   /* background: url("/static/image/Header/maxresdefault.jpg"); */
   /* background-repeat: no-repeat; */
-  background-size: cover;
-  /* background-position: center; */
+  /* background-size: cover; */
+  background-position: center;
   display: flex;
   align-items: center;
 }
@@ -455,7 +473,7 @@ a.search-bar-btn {
   }
 
   .left-section {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -465,7 +483,7 @@ a.search-bar-btn {
   }
 
   .left-section {
-    width: 90%;
+    width: 70%;
   }
 
   .head-section-header {
@@ -554,6 +572,13 @@ section {
   font-size: 0.75rem;
   font-weight: 400;
   margin: 0 0.125rem;
+
+  width: 90%;
+  text-align: center;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: hidden;
 }
 
 .card-text {
@@ -667,10 +692,9 @@ a.contact-link {
   margin: 0 1rem;
 }
 
-.footer-list-genre a{
+.footer-list-genre a {
   display: flex;
 }
-
 
 @media only screen and (max-width: 900px) and (min-width: 441px) {
   footer {

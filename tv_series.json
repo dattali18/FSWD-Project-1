@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Stranger Things",
+    "year": "2016",
+    "time": "60min",
+    "rating": "8.7",
+    "img_path": "/static/image/TV Series/tv-serie1.jpeg"
+  },
+  {
+    "title": "Breaking Bad",
+    "year": "2008",
+    "time": "49min",
+    "rating": "9.5",
+    "img_path": "/static/image/TV Series/tv-serie6.jpeg"
+  },
+  {
+    "title": "The Mandalorian",
+    "year": "2019",
+    "time": "40min",
+    "rating": "8.8",
+    "img_path": "/static/image/TV Series/tv-serie10.jpeg"
+  },
+  {
+    "title": "The Witcher",
+    "year": "2019",
+    "time": "60min",
+    "rating": "8.2",
+    "img_path": "/static/image/TV Series/tv-serie14.jpeg"
+  },
+  {
+    "title": "Game of Thrones",
+    "year": "2011",
+    "time": "57min",
+    "rating": "9.3",
+    "img_path": "/static/image/TV Series/tv-serie19.jpeg"
+  },
+  {
+    "title": "Friends",
+    "year": "1994",
+    "time": "22min",
+    "rating": "8.9",
+    "img_path": "/static/image/TV Series/tv-serie24.jpeg"
+  },
+  {
+    "title": "Black Mirror",
+    "year": "2011",
+    "time": "60min",
+    "rating": "8.8",
+    "img_path": "/static/image/TV Series/tv-serie4.jpeg"
+  },
+  {
+    "title": "The Crown",
+    "year": "2016",
+    "time": "58min",
+    "rating": "8.6",
+    "img_path": "/static/image/TV Series/tv-serie9.jpeg"
+  },
+  {
+    "title": "Money Heist",
+    "year": "2017",
+    "time": "70min",
+    "rating": "8.3",
+    "img_path": "/static/image/TV Series/tv-serie13.jpeg"
+  },
+  {
+    "title": "Westworld",
+    "year": "2016",
+    "time": "62min",
+    "rating": "8.6",
+    "img_path": "/static/image/TV Series/tv-serie18.jpeg"
+  }
+]

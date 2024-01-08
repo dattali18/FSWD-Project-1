@@ -1,0 +1,72 @@
+[
+  {
+    "title": "The Lost City",
+    "year": "2022",
+    "time": "118min",
+    "rating": "7.5",
+    "img_path": "/static/image/Movies/movie-3.jpeg"
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "year": "2004",
+    "time": "108min",
+    "rating": "8.3",
+    "img_path": "/static/image/Movies/movie-7.jpeg"
+  },
+  {
+    "title": "The Dark Knight",
+    "year": "2008",
+    "time": "152min",
+    "rating": "9.0",
+    "img_path": "/static/image/Movies/movie-12.jpeg"
+  },
+  {
+    "title": "La La Land",
+    "year": "2016",
+    "time": "128min",
+    "rating": "8.0",
+    "img_path": "/static/image/Movies/movie-17.jpeg"
+  },
+  {
+    "title": "The Matrix",
+    "year": "1999",
+    "time": "136min",
+    "rating": "8.7",
+    "img_path": "/static/image/Movies/movie-20.jpeg"
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": "1994",
+    "time": "154min",
+    "rating": "8.9",
+    "img_path": "/static/image/Movies/movie-22.jpeg"
+  },
+  {
+    "title": "Interstellar",
+    "year": "2014",
+    "time": "169min",
+    "rating": "8.6",
+    "img_path": "/static/image/Movies/movie-14.jpeg"
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": "2014",
+    "time": "99min",
+    "rating": "8.1",
+    "img_path": "/static/image/Movies/movie-8.jpeg"
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "year": "1994",
+    "time": "142min",
+    "rating": "9.3",
+    "img_path": "/static/image/Movies/movie-1.jpeg"
+  },
+  {
+    "title": "Forrest Gump",
+    "year": "1994",
+    "time": "142min",
+    "rating": "8.8",
+    "img_path": "/static/image/Movies/movie-5.jpeg"
+  }
+]
