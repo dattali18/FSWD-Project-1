@@ -421,6 +421,7 @@ a.site-logo-icon:hover {
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   background-position: center;
+
   display: flex;
   align-items: center;
 }
@@ -471,38 +472,36 @@ a.search-bar-btn {
 @media only screen and (max-width: 1015px) and (min-width: 901px) {
   .head-section {
     height: 40vh;
+    /* background: url("/static/image/Header/maxresdefault.jpg");
+    background-size: cover; */
   }
 
   .left-section {
-    width: 50%;
+    /* display: none; */
   }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 441px) {
   .head-section {
-    height: 30vh;
+    height: 25vh;
+    background: url("/static/image/Header/maxresdefault.jpg");
+    background-size: cover;
   }
 
   .left-section {
-    width: 70%;
-  }
-
-  .head-section-header {
-    font-size: 2rem;
+    display: none;
   }
 }
 
 @media only screen and (max-width: 440px) {
   .head-section {
-    height: 30vh;
+    height: 20vh;
+    background: url("/static/image/Header/maxresdefault.jpg");
+    background-size: cover;
   }
 
   .left-section {
-    width: 100%;
-  }
-
-  .head-section-header {
-    font-size: 2rem;
+    display: none;
   }
 }
 
