@@ -68,5 +68,110 @@
     "time": "62min",
     "rating": "8.6",
     "img_path": "/static/image/TV Series/tv-serie18.jpeg"
+  },
+  {
+    "title": "The Sopranos",
+    "year": "1999",
+    "time": "55min",
+    "rating": "9.2",
+    "img_path": "/static/image/TV Series/tv-serie5.jpeg"
+  },
+  {
+    "title": "Sherlock",
+    "year": "2010",
+    "time": "88min",
+    "rating": "9.1",
+    "img_path": "/static/image/TV Series/tv-serie20.jpeg"
+  },
+  {
+    "title": "Stranger Things",
+    "year": "2016",
+    "time": "60min",
+    "rating": "8.7",
+    "img_path": "/static/image/TV Series/tv-serie15.jpeg"
+  },
+  {
+    "title": "The Simpsons",
+    "year": "1989",
+    "time": "22min",
+    "rating": "8.6",
+    "img_path": "/static/image/TV Series/tv-serie11.jpeg"
+  },
+  {
+    "title": "Fargo",
+    "year": "2014",
+    "time": "53min",
+    "rating": "8.9",
+    "img_path": "/static/image/TV Series/tv-serie2.jpeg"
+  },
+  {
+    "title": "Dexter",
+    "year": "2006",
+    "time": "53min",
+    "rating": "8.6",
+    "img_path": "/static/image/TV Series/tv-serie7.jpeg"
+  },
+  {
+    "title": "The Office",
+    "year": "2005",
+    "time": "22min",
+    "rating": "8.9",
+    "img_path": "/static/image/TV Series/tv-serie3.jpeg"
+  },
+  {
+    "title": "Vikings",
+    "year": "2013",
+    "time": "44min",
+    "rating": "8.5",
+    "img_path": "/static/image/TV Series/tv-serie25.jpeg"
+  },
+  {
+    "title": "House of Cards",
+    "year": "2013",
+    "time": "51min",
+    "rating": "8.7",
+    "img_path": "/static/image/TV Series/tv-serie21.jpeg"
+  },
+  {
+    "title": "The Big Bang Theory",
+    "year": "2007",
+    "time": "22min",
+    "rating": "8.1",
+    "img_path": "/static/image/TV Series/tv-serie16.jpeg"
+  },
+  {
+    "title": "The Wire",
+    "year": "2002",
+    "time": "59min",
+    "rating": "9.3",
+    "img_path": "/static/image/TV Series/tv-serie23.jpeg"
+  },
+  {
+    "title": "Stranger Things",
+    "year": "2016",
+    "time": "60min",
+    "rating": "8.7",
+    "img_path": "/static/image/TV Series/tv-serie12.jpeg"
+  },
+  {
+    "title": "Mindhunter",
+    "year": "2017",
+    "time": "60min",
+    "rating": "8.6",
+    "img_path": "/static/image/TV Series/tv-serie22.jpeg"
+  },
+  {
+    "title": "This Is Us",
+    "year": "2016",
+    "time": "45min",
+    "rating": "8.7",
+    "img_path": "/static/image/TV Series/tv-serie8.jpeg"
+  },
+  {
+    "title": "The X-Files",
+    "year": "1993",
+    "time": "45min",
+    "rating": "8.6",
+    "img_path": "/static/image/TV Series/tv-serie17.jpeg"
   }
 ]

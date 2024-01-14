@@ -12,10 +12,10 @@
     <header>
       <nav class="nav-bar" id="nav">
         <div class="site-logo">
-          <div class="burger text-white" id="burger">
+          <div class="burger text-white" id="burger" onclick="document.getElementById('nav').classList.toggle('open')">
             <i class="fa-solid fa-bars"></i>
           </div>
-          <a class="site-logo-icon" href="/index.html">
+          <a class="site-logo-icon" href="index.html">
             <i class="fa-solid fa-video"></i>
             Films
           </a>
@@ -33,31 +33,31 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="tv-serie-info.html">
                 <i class="fa-solid fa-tv"></i>
                 TV Series
               </a>
             </li>
-            <li class="more" id="options">
+            <li class="more" id="options" onclick="document.getElementById('sections').classList.toggle('flex')">
               <div class="option">
                 <i class="fa-solid fa-chevron-down"></i>
                 Options
               </div>
               <ul class="sections" id="sections">
                 <li>
-                  <a href="#trending">
+                  <a href="index.html#trending">
                     <i class="fa-solid fa-arrow-trend-up"></i>
                     Trending
                   </a>
                 </li>
                 <li>
-                  <a href="#movies">
+                  <a href="index.html#movies">
                     <i class="fa-solid fa-clock"></i>
                     Latest Movie
                   </a>
                 </li>
                 <li>
-                  <a href="#series">
+                  <a href="index.html#series">
                     <i class="fa-solid fa-clock"></i>
                     Latest Series
                   </a>
@@ -88,44 +88,45 @@
           <h2 class="section-header">Movie Trailer</h2>
         </div>
         <div class="container">
-          <iframe
+          <!-- <iframe
             id="video"
             src="https://www.youtube.com/embed/GSycMV-_Csw?si=UtLpo32BfwuwNRaF"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
+          <div class="video-container">
+            <video controls muted poster="play-button.png">
+              <source src="/static/video/video-3.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </section>
       <section class="text-white">
         <div class="section-head">
           <h2 class="section-header">Movie Details</h2>
         </div>
-        <div class="table-section" style="overflow-x: auto;">
+        <div class="table-section" style="overflow-x: auto">
           <table class="movie-details-table">
             <thead>
               <tr>
-                <th rowspan="2">Seasons</th>
-                <th rowspan="2">Episodes</th>
-                <th colspan="2">Originally released</th>
-              </tr>
-              <tr>
-                <th>First released</th>
-                <th>Last released</th>
+                <th>Directed by</th>
+                <th>Screenplay by</th>
+                <th>Produced by</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><div>1</div></td>
-                <td><div>8</div></td>
-                <td colspan="2"><div>February 4, 2022</div></td>
+                <td rowspan="3"><div>Zack Snyder</div></td>
+                <td rowspan="3"><div>Zack Snyder</div></td>
+                <td><div>Zack Snyder</div></td>
               </tr>
               <tr>
-                <td><div>2</div></td>
-                <td><div>8</div></td>
-                <td><div>December 15, 2023</div></td>
-                <td><div>January 19, 2024</div></td>
+                <td><div>Deborah Snyder Wesley Coller</div></td>
+              </tr>
+              <tr>
+                <td><div>Wesley Coller</div></td>
               </tr>
             </tbody>
           </table>
@@ -142,9 +143,9 @@
             <li><a href="#">Sitemap</a></li>
           </ul>
           <ul class="footer-list">
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TV</a> Series</li>
-            <li><a href="#">Top IMDb</a></li>
+            <li><a href="movie-info.html">Movies</a></li>
+            <li><a href="tv-serie-info.html">TV Series</a></li>
+            <li><a target="_blank" href="https://www.imdb.com/chart/top/">Top IMDb</a></li>
           </ul>
         </div>
       </div>
@@ -153,19 +154,28 @@
         <div class="footer-lists">
           <ul class="footer-list footer-list-genre">
             <li>
-              <a href="#">
+              <a
+                href="https://www.google.com/search?q=action+movies&client=firefox-b-d&sca_esv=596900420&sxsrf=ACQVn0_xt9ziZY-mElCeSI5vHQ-BOuDSvA%3A1704815224806&ei=eGqdZbHpMJuGxc8P4OiwmAE&ved=0ahUKEwixhYfP09CDAxUbQ_EDHWA0DBMQ4dUDCBA&uact=5&oq=action+moviesc&gs_lp=Egxnd3Mtd2l6LXNlcnAiDmFjdGlvbiBtb3ZpZXNjMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHSNUBUABYAHAAeAKQAQCYAQCgAQCqAQC4AQPIAQDiAwQYACBBiAYBkAYI&sclient=gws-wiz-serp"
+                target="_blank"
+              >
                 <i class="fa-solid fa-folder"></i>
                 <p>Action</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.google.com/search?q=comedy+movies&client=firefox-b-d&sca_esv=596900420&sxsrf=ACQVn08TRn3cDHeOTVQKkDRLByb9gzwV2A%3A1704815005446&ei=nWmdZfPsGv-9xc8PufWi2Ak&ved=0ahUKEwizr7rm0tCDAxX_XvEDHbm6CJsQ4dUDCBA&uact=5&oq=comedy+movies&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWNvbWVkeSBtb3ZpZXMyDRAAGIAEGIoFGEMYsQMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyBhAAGAcYHkjGPlD6AViZPHAEeAGQAQCYAdQBoAGSDaoBBTAuOS4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAggQABgHGB4YCuIDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp"
+                target="_blank"
+              >
                 <i class="fa-solid fa-folder"></i>
                 <p>Comedy</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.google.com/search?q=drama+movies&client=firefox-b-d&sca_esv=596900420&sxsrf=ACQVn09qVsqaTBL4gyyYZqMIEn6-5QW9aw%3A1704815413137&ei=NWudZbr1B8GLi-gP976T8Aw&ved=0ahUKEwj64-2o1NCDAxXBxQIHHXffBM4Q4dUDCBA&uact=5&oq=damra+movies&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGRhbXJhIG1vdmllczIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYRzIEEAAYR0jfAVAAWABwAHgCkAEAmAEAoAEAqgEAuAEDyAEA4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp"
+                target="_blank"
+              >
                 <i class="fa-solid fa-folder"></i>
                 <p>Drama</p>
               </a>
@@ -173,19 +183,28 @@
           </ul>
           <ul class="footer-list footer-list-genre">
             <li>
-              <a href="#">
+              <a
+                href="https://www.google.com/search?q=fantasy+movies&client=firefox-b-d&sca_esv=596900420&sxsrf=ACQVn084OpcK8CgnCRFEoCeie3F3U4NrcQ%3A1704815058709&ei=0mmdZb3uKpGPxc8P89CNyAI&oq=fant+movies&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2ZhbnQgbW92aWVzKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSLWhAVDsAlj6mgFwAngDkAEAmAGvAaABiAWqAQMwLjS4AQPIAQD4AQGoAhTCAgoQABhHGNYEGLADwgIHECMY6gIYJ8ICEBAAGAMYjwEY6gIYtALYAQHCAgQQABhHwgIMEAAYgAQYigUYQxgKwgIKEAAYgAQYigUYQ-IDBBgAIEGIBgGQBgi6BgYIARABGAo&sclient=gws-wiz-serp"
+                target="_blank"
+              >
                 <i class="fa-solid fa-folder"></i>
                 <p>Fantasy</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.google.com/search?q=horror+movies&client=firefox-b-d&sca_esv=596900420&sxsrf=ACQVn0-qVkk70LTJ_tmFoejVhchAdB3JlA%3A1704815085855&ei=7WmdZa7kM522xc8P5q6I8Ak&ved=0ahUKEwjujuaM09CDAxUdW_EDHWYXAp4Q4dUDCBA&uact=5&oq=horror+movies&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWhvcnJvciBtb3ZpZXMyDRAAGIAEGIoFGEMYsQMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGENIzg9QlgVYiQtwAngBkAEAmAG4AaABogeqAQMwLja4AQPIAQD4AQHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICBhAAGAcYHsICERAAGIAEGIoFGJECGLEDGIMBwgIIEAAYBxgeGAriAwQYACBBiAYBkAYK&sclient=gws-wiz-serp"
+                target="_blank"
+              >
                 <i class="fa-solid fa-folder"></i>
                 <p>Horror</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.google.com/search?q=mystery+movies&client=firefox-b-d&sca_esv=596900420&sxsrf=ACQVn0-P16wpkrQcF6XkFsVpDmoClX4sJw%3A1704815097543&ei=-WmdZZXSIISFxc8PuMyXsAI&oq=mysmovies&gs_lp=Egxnd3Mtd2l6LXNlcnAiCW15c21vdmllcyoCCAAyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHkjPEFD0AlivCHACeAGQAQCYAa8BoAH9BKoBAzAuNLgBA8gBAPgBAcICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgINEAAYgAQYigUYQxixA8ICChAAGIAEGIoFGEPCAggQABgHGB4YCuIDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp"
+                target="_blank"
+              >
                 <i class="fa-solid fa-folder"></i>
                 <p>Mystery</p>
               </a>
@@ -221,6 +240,6 @@
       src="https://kit.fontawesome.com/cd0bc30836.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/static/js/app.js"></script>
+    <!-- <script src="/static/js/app.js"></script> -->
   </body>
 </html>

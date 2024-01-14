@@ -68,5 +68,96 @@
     "time": "142min",
     "rating": "8.8",
     "img_path": "/static/image/Movies/movie-5.jpeg"
+  },
+  {
+    "title": "Inception",
+    "year": "2010",
+    "time": "148min",
+    "rating": "8.8",
+    "img_path": "/static/image/Movies/movie-9.jpeg"
+  },
+  {
+    "title": "The Godfather",
+    "year": "1972",
+    "time": "175min",
+    "rating": "9.2",
+    "img_path": "/static/image/Movies/movie-15.jpeg"
+  },
+  {
+    "title": "Fight Club",
+    "year": "1999",
+    "time": "139min",
+    "rating": "8.8",
+    "img_path": "/static/image/Movies/movie-18.jpeg"
+  },
+  {
+    "title": "Titanic",
+    "year": "1997",
+    "time": "195min",
+    "rating": "7.8",
+    "img_path": "/static/image/Movies/movie-4.jpeg"
+  },
+  {
+    "title": "Gladiator",
+    "year": "2000",
+    "time": "155min",
+    "rating": "8.5",
+    "img_path": "/static/image/Movies/movie-11.jpeg"
+  },
+  {
+    "title": "Avatar",
+    "year": "2009",
+    "time": "162min",
+    "rating": "7.8",
+    "img_path": "/static/image/Movies/movie-16.jpeg"
+  },
+  {
+    "title": "The Social Network",
+    "year": "2010",
+    "time": "120min",
+    "rating": "7.7",
+    "img_path": "/static/image/Movies/movie-19.jpeg"
+  },
+  {
+    "title": "Jurassic Park",
+    "year": "1993",
+    "time": "127min",
+    "rating": "8.1",
+    "img_path": "/static/image/Movies/movie-21.jpeg"
+  },
+  {
+    "title": "The Revenant",
+    "year": "2015",
+    "time": "156min",
+    "rating": "8.0",
+    "img_path": "/static/image/Movies/movie-13.jpeg"
+  },
+  {
+    "title": "The Lion King",
+    "year": "1994",
+    "time": "88min",
+    "rating": "8.5",
+    "img_path": "/static/image/Movies/movie-10.jpeg"
+  },
+  {
+    "title": "Casablanca",
+    "year": "1942",
+    "time": "102min",
+    "rating": "8.5",
+    "img_path": "/static/image/Movies/movie-6.jpeg"
+  },
+  {
+    "title": "Gone with the Wind",
+    "year": "1939",
+    "time": "238min",
+    "rating": "8.1",
+    "img_path": "/static/image/Movies/movie-24.jpeg"
+  },
+  {
+    "title": "The Wizard of Oz",
+    "year": "1939",
+    "time": "102min",
+    "rating": "8.0",
+    "img_path": "/static/image/Movies/movie-21.jpeg"
   }
 ]

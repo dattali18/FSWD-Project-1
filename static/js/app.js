@@ -35,6 +35,9 @@ function createCard(card) {
   const infoElement = document.createElement("div");
   infoElement.classList.add("card-info");
 
+  const playBtn = document.createElement("div");
+  playBtn.classList.add("pos-center", "text-orange-dark", "play-btn");
+
   const yearElement = document.createElement("p");
   yearElement.classList.add("card-year");
   yearElement.textContent = card.year;
@@ -52,11 +55,16 @@ function createCard(card) {
     yearElement,
     createCircleElement(),
     timeElement,
-    createCircleElement(),
+    createStarElement(),
     ratingElement
   );
+
+  playBtn.append(
+    createPlayBtnElement()
+  )
+
   textElement.append(titleElement, infoElement);
-  cardElement.append(imageElement, textElement);
+  cardElement.append(playBtn, imageElement, textElement);
 
   return cardElement;
 }
@@ -69,15 +77,36 @@ function createCircleElement() {
   return circleElement;
 }
 
+function createStarElement() {
+  const circleElement = document.createElement("i");
+  circleElement.classList.add("fa-solid", "fa-star");
+  circleElement.style.fontSize = "0.5rem";
+  return circleElement;
+}
+
+function createPlayBtnElement() {
+  const circleElement = document.createElement("i");
+  circleElement.classList.add("fa-solid", "fa-circle-play", "bg-white");
+  return circleElement;
+}
+
 // Function to add cards to the specified section
-function addCardsToSection(sectionId, cards) {
+function addCardsToSection(sectionId, cards, amount = 0) {
   const section = document.getElementById(sectionId);
   const sectionList = section.querySelector(".section-body");
 
-  cards.forEach((card) => {
-    const cardElement = createCard(card);
-    sectionList.appendChild(cardElement);
-  });
+  if (amount === 0) {
+    cards.forEach((card) => {
+      const cardElement = createCard(card);
+      sectionList.appendChild(cardElement);
+    });
+  } else {
+    for (let index = 0; index < amount; index++) {
+      const card = cards[index];
+      const cardElement = createCard(card);
+      sectionList.appendChild(cardElement);
+    }
+  }
 }
 
 // Fetch data from JSON files and add cards to sections
@@ -88,3 +117,7 @@ fetch("../../json/movies.json")
 fetch("../../json/tv_series.json")
   .then((response) => response.json())
   .then((tvSeries) => addCardsToSection("series", tvSeries));
+
+fetch("../../json/tv_series.json")
+  .then((response) => response.json())
+  .then((tvSeries) => addCardsToSection("trending", tvSeries, 10));
