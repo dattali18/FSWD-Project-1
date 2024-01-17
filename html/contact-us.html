@@ -83,6 +83,20 @@
       </nav>
     </header>
     <main>
+      <div class="custom-container">
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form action="#" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+      
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="text-white">
       <div class="footer-about-us">
@@ -168,7 +182,9 @@
         </div>
       </div>
       <div class="footer-contact-us">
-        <h3 class="footer-header">Contact Us</h3>
+        <h3 class="footer-header">
+          <a href="contact-us.html" class="text-white">Contact Us</a>
+        </h3>
         <ul class="footer-list footer-list-links">
           <li>
             <a href="#" class="contact-link">
