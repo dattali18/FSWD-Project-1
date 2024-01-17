@@ -790,7 +790,7 @@ a.contact-link {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: #555;
+  background-color: var(--light);
 }
 
 .contact-form textarea {
@@ -827,5 +827,6 @@ a.contact-link {
 .thank-you-message.show {
   display: block;
 }
+
 
 
