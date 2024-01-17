@@ -86,15 +86,18 @@
       <div class="custom-container">
         <div class="contact-form">
           <h2>Contact Us</h2>
-          <form action="#" method="post">
+          <form action="#" method="post" id="contactForm">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
       
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
       
-            <button type="submit">Send</button>
+            <button type="submit" id="sendMessageButton">Send</button>
           </form>
+          <div class="thank-you-message" id="thankYouMessage">
+            Thank you!
+          </div>
         </div>
       </div>
     </main>
@@ -212,5 +215,26 @@
       crossorigin="anonymous"
     ></script>
     <!-- <script src="/static/js/app.js"></script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector(".contact-form form");
+        const thankYouMessage = document.querySelector(".thank-you-message");
+        
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          
+          // Assuming your form validation logic here (you can replace this with your actual validation)
+          const isValid = true;
+      
+          if (isValid) {
+            // Hide the contact form
+            form.style.display = "none";
+            
+            // Show the thank-you message
+            thankYouMessage.classList.add("show");
+          }
+        });
+      });
+      </script>
   </body>
 </html>
