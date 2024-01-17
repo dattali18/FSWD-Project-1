@@ -12,7 +12,11 @@
     <header>
       <nav class="nav-bar" id="nav">
         <div class="site-logo">
-          <div class="burger text-white" id="burger" onclick="document.getElementById('nav').classList.toggle('open')">
+          <div
+            class="burger text-white"
+            id="burger"
+            onclick="document.getElementById('nav').classList.toggle('open')"
+          >
             <i class="fa-solid fa-bars"></i>
           </div>
           <a class="site-logo-icon" href="index.html">
@@ -38,7 +42,11 @@
                 TV Series
               </a>
             </li>
-            <li class="more" id="options" onclick="document.getElementById('sections').classList.toggle('flex')">
+            <li
+              class="more"
+              id="options"
+              onclick="document.getElementById('sections').classList.toggle('flex')"
+            >
               <div class="option">
                 <i class="fa-solid fa-chevron-down"></i>
                 Options
@@ -87,17 +95,47 @@
         <div class="contact-form">
           <h2>Contact Us</h2>
           <form action="#" method="post" id="contactForm">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-      
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-      
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@domain.country"
+              required
+            />
+
+            <label for="issue">Issue</label>
+            <select id="issue" name="issue" required>
+              <option value="" disabled selected>Select an issue</option>
+              <option value="link_not_working">Link is not working</option>
+              <option value="site_loading_issue">
+                Site not loading properly
+              </option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <div class="consent">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                required
+                checked
+              />
+              <label for="consent"> Accept email response </label>
+            </div>
+
             <button type="submit" id="sendMessageButton">Send</button>
           </form>
-          <div class="thank-you-message" id="thankYouMessage">
-            Thank you!
-          </div>
         </div>
       </div>
     </main>
@@ -215,7 +253,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- <script src="/static/js/app.js"></script> -->
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function () {
         const form = document.querySelector(".contact-form form");
         const thankYouMessage = document.querySelector(".thank-you-message");
@@ -235,6 +273,6 @@
           }
         });
       });
-      </script>
+      </script> -->
   </body>
 </html>
