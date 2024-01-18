@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="/static/style/style.css" />
 
-    <title>Movie Details</title>
+    <title>Movies</title>
   </head>
   <body>
     <header>
@@ -91,54 +91,33 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div class="section-head">
-          <h2 class="section-header">Series Trailer</h2>
-        </div>
-        <div class="container">
-          <iframe
-            id="video"
-            src="https://www.youtube.com/embed/GSycMV-_Csw?si=UtLpo32BfwuwNRaF"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-      <section class="text-white">
-        <div class="section-head">
-          <h2 class="section-header">Series Details</h2>
-        </div>
-        <div class="table-section" style="overflow-x: auto">
-          <table class="movie-details-table">
-            <thead>
-              <tr>
-                <th rowspan="2">Seasons</th>
-                <th rowspan="2">Episodes</th>
-                <th colspan="2">Originally released</th>
-              </tr>
-              <tr>
-                <th>First released</th>
-                <th>Last released</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><div>1</div></td>
-                <td><div>8</div></td>
-                <td colspan="2"><div>February 4, 2022</div></td>
-              </tr>
-              <tr>
-                <td><div>2</div></td>
-                <td><div>8</div></td>
-                <td><div>December 15, 2023</div></td>
-                <td><div>January 19, 2024</div></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <div class="form-container">
+        <form action="">
+          <legend>Login</legend>
+          <div class="input-container">
+            <input
+              placeholder="username"
+              type="text"
+              name="username"
+              id="username"
+            />
+          </div>
+          <div class="input-container">
+            <input placeholder="email" type="email" name="email" id="email" />
+          </div>
+          <div class="input-container">
+            <input
+              placeholder="password"
+              type="password"
+              name="password"
+              id="password"
+            />
+          </div>
+          <div class="input-container">
+            <button type="submit">Sign In</button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="text-white">
       <div class="footer-about-us">
@@ -253,6 +232,5 @@
       src="https://kit.fontawesome.com/cd0bc30836.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="/static/js/app.js"></script> -->
   </body>
 </html>
