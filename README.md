@@ -1,5 +1,9 @@
 # Full Stack Web Dev Project 1
 
+## Overview
+
+This project is a static site built with `HTML` and `CSS`
+
 ### Requirements
 
 1. Separation between different files - `HTML` files + `CSS` files + Media files + additional files.
@@ -12,3 +16,8 @@
 8. Using Media Queries (demonstrating a different arrangement and different presentation of the contents on screens of different sizes).
 9. Using FlexBox `CSS` + Grid `CSS` in a varied, intelligent way and combined where appropriate.
 10. `CSS` effects and animations.
+
+## Authors
+
+[Daniel Attali](https://github.com/dattali18)
+[Nehorai Yossef](https://github.com/nyosef1108)
